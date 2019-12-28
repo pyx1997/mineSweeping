@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			 <div id="header">
+				 <div class="score" @click="sign"><img src="img/lei1.png">{{nowStunNum}}</div>
+				 <button @click="sign" class="iconfont" id="flag" :class="flag ? 'selectFlag':'flag'">&#xe732;</button>
+				 <div class="time"><span class="iconfont">&#xe608;</span>{{useTime}}</div>
+			 </div>
+			<div id="tb">
+				<div v-for="(item, index) in gameMap" :key="index"  >
+					<div onselectstart="return false;"  v-for="(m_item, m_index) in item" class="unit"
+					 :class="(fail && gameMap[index][m_index]<0)?'stun iconfont':''" @click="handle(index, m_index)" id="unit"></div>
+				</div>
+			</div>
+			
+			<div class="control" v-text="state" @click="start" id="start"></div>
+		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

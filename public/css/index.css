@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h4{
+	margin: 10px;
+	text-align: center;
+}
+#app{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#tb{
+	border: 1px solid #000000;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+}
+#tb > div{
+	overflow: hidden;
+}
+.unit{
+	float: left;
+	background: linear-gradient(#91cff4,#2046b1);
+	cursor:pointer;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	box-sizing: border-box;
+	line-height: 30px;
+	/* box-shadow: 2px 2px 2px #113250; */
+}
+.click{
+	background: linear-gradient(#d8d8d8,#fff);
+	float:left;
+	cursor:pointer;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border-left: 2px solid #000;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	box-sizing: border-box;
+	line-height: 30px;
+	/* box-shadow: -2px -2px 2px #000; */
+}
+.score{
+	height:30px;
+	display: flex;
+	align-items: center;
+}
+.score img{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+#header{
+	height:40px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 18px;
+	border: 1px solid #000000;
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-sizing: border-box;
+}
+.time{
+	display: flex;
+	align-items: center;
+}
+.time span{
+	color:#2046b1 ;
+	font-size: 30px;
+	margin-right: 10px;
+}
+button{
+	cursor: pointer;
+	width:36px;
+	height:36px;
+	text-align: center;
+	line-height: 36px;
+	outline: none;
+	/* border: none; */
+}
+.flag{
+	background: #fff;
+}
+.selectFlag{
+	background: linear-gradient(#91cff4,#2046b1);
+	/* box-shadow: -2px -2px 2px #113250; */
+}
+.stun{
+	background:url(../img/lei1.png),#fff;
+	background-position: center center;
+	background-repeat:no-repeat;
+	border-left: 2px solid #000;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+.control{
+	width:100px;
+	height:40px;
+	margin:20px auto;
+	background: linear-gradient(#91cff4,#2046b1);
+	color:#fff;
+	text-align:center;
+	line-height:40px;
+	border-radius:20px;
+	cursor:pointer
+}
+.iconfont{
+	color:red;
+	font-size: 24px;
+}
